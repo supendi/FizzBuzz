@@ -1,7 +1,7 @@
 ﻿namespace FizzBuzz.ConsoleApp
 {
     /// <summary>
-    /// FizzBuzz? implement this. Other than fizzbuzz requirement? implement this too.
+    /// FizzBuzz? implement this interface. Other than fizzbuzz requirement? implement this too.
     /// </summary>
     public interface INumberToText
     {
