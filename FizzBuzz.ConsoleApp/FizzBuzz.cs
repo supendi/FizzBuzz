@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FizzBuzz.ConsoleApp
+﻿namespace FizzBuzz.ConsoleApp
 {
+    /// <summary>
+    /// Provides the fizz buzz functionality as stated by the requirement
+    /// </summary>
     public class FizzBuzz
     {
         /// <summary>
-        /// Print fizz, buzz or fizzbuzz
+        /// Gets fizz, buzz or fizzbuzz, based on the input argument
         /// </summary>
         /// <param name="v"></param>
         /// <returns></returns>
-        public static string GetText(int i)
+        public string GetText(int i)
         {
             var isFizzBuzz = i % 3 == 0 && i % 5 == 0;
             var isBuzz = i % 5 == 0;

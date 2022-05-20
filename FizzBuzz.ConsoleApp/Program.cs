@@ -6,12 +6,10 @@ namespace FizzBuzz.ConsoleApp
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <= 100; i++)
-            {
-                var text = FizzBuzz.GetText(i);
-                Console.WriteLine(text);
-            }
-            Console.ReadKey();
+            var fizzBuzz = new FizzBuzz();
+            var printer = new FizzBuzzPrinter(fizzBuzz);
+
+            printer.Print(100);
         }
     }
 }
