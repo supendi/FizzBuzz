@@ -13,7 +13,7 @@ namespace FizzBuzz.ConsoleApp
         /// </summary>
         /// <param name="v"></param>
         /// <returns></returns>
-        public static string Print(int i)
+        public static string GetText(int i)
         {
             var isFizzBuzz = i % 3 == 0 && i % 5 == 0;
             var isBuzz = i % 5 == 0;
