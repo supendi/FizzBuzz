@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace FizzBuzz.ConsoleApp
 {
     /// <summary>
-    /// Lets say this one as a presenter layer
+    /// Lets say this one as the presentation layer
     /// who consumes the fizzbuzz class (service layer)
     /// </summary>
     public class FizzBuzzPrinter
@@ -28,7 +28,7 @@ namespace FizzBuzz.ConsoleApp
                 throw new ArgumentException("Input should be greater than 0");
             }
 
-            for (int i = 1; i <= 100; i++)
+            for (int i = 1; i <= n; i++)
             {
                 var text = fizzBuzz.GetText(i);
                 Console.WriteLine(text);
