@@ -12,8 +12,8 @@ namespace FizzBuzz.ConsoleApp
     /// </summary>
     public class FizzBuzzPrinter
     {
-        FizzBuzz fizzBuzz;
-        public FizzBuzzPrinter(FizzBuzz fizzBuzz)
+        INumberToText fizzBuzz;
+        public FizzBuzzPrinter(INumberToText fizzBuzz)
         {
             this.fizzBuzz = fizzBuzz;
         }
