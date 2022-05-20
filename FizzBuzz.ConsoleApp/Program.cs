@@ -6,7 +6,12 @@ namespace FizzBuzz.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            for (int i = 1; i <= 100; i++)
+            {
+                var text = FizzBuzz.GetText(i);
+                Console.WriteLine(text);
+            }
+            Console.ReadKey();
         }
     }
 }
